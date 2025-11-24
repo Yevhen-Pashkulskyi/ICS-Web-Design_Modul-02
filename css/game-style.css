@@ -1,0 +1,99 @@
+/* Базові стилі сторінки */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Картка гри */
+.game-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Стилі для форми */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 600;
+  text-align: left;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Блок результатів */
+.result-area {
+  margin-top: 25px;
+  text-align: left;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  display: none;
+}
+
+.result-area p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.result-area span {
+  font-weight: bold;
+}
+
+.win {
+  color: #28a745;
+}
+
+.lose {
+  color: #dc3545;
+}
+
+.draw {
+  color: #ffc107;
+}

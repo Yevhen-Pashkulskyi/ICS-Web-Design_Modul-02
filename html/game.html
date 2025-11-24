@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Камінь ножиці папір</title>
+  <link rel="stylesheet" href="../css/game-style.css">
+</head>
+<body>
+<div class="game-card">
+  <h1>Камінь, Ножиці, Папір</h1>
+
+  <label for="userChoice">Ваш вибір:</label>
+  <select id="userChoice">
+    <option value="rock">Камінь</option>
+    <option value="scissors">Ножиці</option>
+    <option value="paper">Папір</option>
+  </select>
+
+  <button id="playBtn">Грати</button>
+
+  <div class="result-area" id="resultArea">
+    <p>Ви обрали: <span id="userResult"></span></p>
+    <p>Комп'ютер обрав: <span id="computerResult"></span></p>
+    <p>Результат: <span id="gameWinner"></span></p>
+  </div>
+</div>
+</body>
+<script src="../js/game.js"></script>
+</html>
