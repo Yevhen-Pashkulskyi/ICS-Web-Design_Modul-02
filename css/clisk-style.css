@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+/* Наш об'єкт, на який будемо клікати */
+#clickArea {
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #333;
+  position: relative;
+  cursor: crosshair;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Текст підказки всередині */
+.hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #aaa;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Стиль для самої цифри */
+.marker {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ff5722;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+  /* Центруємо мітку відносно точки кліка */
+  transform: translate(-50%, -50%);
+  animation: popIn 0.3s ease-out;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Анімація "вистрибування" */
+@keyframes popIn {
+  0% { transform: translate(-50%, -50%) scale(0); }
+  70% { transform: translate(-50%, -50%) scale(1.2); }
+  100% { transform: translate(-50%, -50%) scale(1); }
+}
